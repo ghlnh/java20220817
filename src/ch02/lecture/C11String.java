@@ -55,7 +55,7 @@ public class C11String {
 		System.out.println(r.charAt(r.length()-1));
 		
 		// substring 
-		
+		System.out.println("String 출력");
 		String s = r.substring(0);
 		System.out.println(s);
 		String t = r.substring(1);
@@ -63,6 +63,7 @@ public class C11String {
 		System.out.println(r.substring(2));
 		System.out.println(r.substring(3));
 		System.out.println(r.substring(4));
+		System.out.println("/////");
 		System.out.println(r.substring(9));
 		System.out.println(r.substring(10));
 		
@@ -72,7 +73,8 @@ public class C11String {
 		System.out.println(r.substring(0, 10));
 		System.out.println(r.substring(0, 4)); // "java"
 		System.out.println(r.substring(2, 4)); // "va"
-		
+		System.out.println(r.substring(0, 1));
+		System.out.println(r.substring(0, r.length()-1));
 				
 	}
 }
