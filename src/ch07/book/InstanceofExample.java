@@ -24,6 +24,6 @@ public class InstanceofExample {
 		Parent parentB = new Parent();
 		//Parent 객체를 매개값으로 전달
 		method1(parentB);
-		method2(parentB);	//예외발생	
+		method2(parentB);	//예외발생 (instanceof로 타입 확인 하지 않고 부모->자식으로 강제 변환하려 해서)	
 	}
 }
