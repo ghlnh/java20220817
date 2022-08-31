@@ -8,6 +8,9 @@ public class InstanceofExample {
 		}else {
 			System.out.println("method1- Child로 변환 되지 않음");
 		}
+		if (parent instanceof Parent) {
+			System.out.println("Parent 타입 맞아요");
+		}
 	}
 	
 	public static void method2(Parent parent) {
