@@ -1,0 +1,13 @@
+package ch11.book;
+
+import ch11.book.CompareExample.Student;
+
+public class StudentComparator implements Comparator <Student> {
+	public int compare(Student a, Student b) {
+		if(a.sno<b.sno) return -1;
+		else if(a.sno == b.sno) return 0;
+		else return 1;
+		}
+	}
+
+
