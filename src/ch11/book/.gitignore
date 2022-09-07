@@ -33,3 +33,14 @@
 /SystemEnvExample.class
 /ClassExample.class
 /ReflectionExample.class
+/BoxingUnBoxingExample.class
+/AutoBoxingUnBoxingExample.class
+/StringToPrimitiveValueExample.class
+/ValueCompareExample.class
+/ByteToStringExample.class
+/KeyboardToStringExample.class
+/StringCharAtExample.class
+/StringLengthExample.class
+/StringIndexOfExample.class
+/StringReplaceExample.class
+/StringSubstringExample.class
