@@ -7,7 +7,7 @@ import com.sun.org.apache.bcel.internal.classfile.Method;
 
 public class ReflectionExample {
 	public static void main(String[] args) throws Exception {
-		Class clazz = Class.forName("sec06.exam02_reflectrion.Car");
+		Class clazz = Class.forName("java.lang.String");
 		
 		System.out.println("[클래스 이름]");
 		System.out.println(clazz.getName());

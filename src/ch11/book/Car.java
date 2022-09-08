@@ -7,4 +7,9 @@ public class Car {
 		this.model = model;
 	}
 
+	public Car() {
+		// TODO Auto-generated constructor stub
+	}
+
+
 }

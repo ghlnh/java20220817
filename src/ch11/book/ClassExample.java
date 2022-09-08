@@ -2,7 +2,7 @@ package ch11.book;
 
 public class ClassExample {
 public static void main(String[] args) {
-	Car1 car = new Car1();
+	Car car = new Car();
 	Class clazz1 = car.getClass();
 	System.out.println(clazz1.getName());
 	System.out.println(clazz1.getSimpleName());
@@ -10,7 +10,7 @@ public static void main(String[] args) {
 	System.out.println();
 	
 	try {
-		Class clazz2 = Class.forName("sec06.exam01_class.Car");
+		Class clazz2 = Class.forName("java.lang.String");
 		System.out.println(clazz2.getName());
 		System.out.println(clazz2.getSimpleName());
 		System.out.println(clazz2.getPackage().getName());

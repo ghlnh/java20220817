@@ -9,7 +9,7 @@ public class PrintAnnotationExample {
 		//Method 객체를 하나씩 처리
 		for(Method method : declareMethods) {
 			//PrintAnnotation이 적용되었는지 확인
-			if(Method.isAnnotationPresent(PrintAnnotation.class)) {
+			if(method.isAnnotationPresent(method.getAnnotation(PrintAnnotation.class)) {
 				//PrintAnnotation 객체 얻기
 				PrintAnnotation printAnnotation = method.getAnnotation(PrintAnnotation.class);
 				
