@@ -24,13 +24,14 @@ public class C01Regex {
 		
 		String s4 = "bbb";
 		String p4 = "b+"; // + : 한개 이상
-		
+		System.out.println("+++++++++++++++++++++++++++++");
 		System.out.println(s4.matches(p4));
 		System.out.println(s3.matches(p4));
 		System.out.println(s2.matches(p4));
 		
 		System.out.println("".matches(p4));
 		
+		System.out.println("*****************************");
 		String p5 = "b*"; // * : 0개 이상
 		System.out.println("bbb".matches(p5));
 		System.out.println("bb".matches(p5));
@@ -43,7 +44,7 @@ public class C01Regex {
 		String p7 = "do+g";
 		System.out.println("dog".matches(p7));
 		System.out.println("doooooog".matches(p7));
-		
+		System.out.println("[                              ]");
 		String p8 = "[abcd]"; // [] : 안에 나열된 문자 중 하나
 		System.out.println("a".matches(p8));
 		System.out.println("b".matches(p8));
@@ -66,7 +67,7 @@ public class C01Regex {
 		System.out.println("abc".matches(p10));
 		
 		System.out.println("abc".matches("[a-c]+"));
-		
+		System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^");
 		String p11 = "[^abcdefghijkl]"; // [^] : 제외하고
 		System.out.println("a".matches(p11));
 		System.out.println("m".matches(p11));
@@ -89,7 +90,7 @@ public class C01Regex {
 		// {n} : n개
 		// {n,} : n개 이상
 		// {n, m} : n개 이상 m개 이하
-		
+		System.out.println("----수량관련 정규표현식-------");
 		String p14 = "do+g";
 		System.out.println("dog".matches(p14));
 		System.out.println("doooooooooooog".matches(p14));
@@ -116,7 +117,7 @@ public class C01Regex {
 		// \s : 공백(스페이스, 엔터, 탭) 
 		// ^ : 한 줄의 시작
 		// $ : 한 줄의 끝
-		
+		System.out.println("----기호관련 정규표현식-------");
 		String p18 = ".";
 		System.out.println("a".matches(p18));
 		System.out.println(" ".matches(p18));
@@ -143,7 +144,7 @@ public class C01Regex {
 		
 		// () : 그룹
 		// | : or 또는
-		
+		System.out.println("----그룹관련 정규표현식-------");
 		String p22 = "(dog|cat)";
 		System.out.println("dog".matches(p22));
 		System.out.println("cat".matches(p22));
@@ -161,7 +162,7 @@ public class C01Regex {
 		System.out.println("dogdo".matches(p24));
 		
 		// \. : . (dot)
-		
+		System.out.println("..........................");
 		String p25 = "\\.";
 		System.out.println("a".matches(p25)); // false
 		System.out.println(".".matches(p25)); // true
