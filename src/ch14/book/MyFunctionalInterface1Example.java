@@ -15,7 +15,7 @@ public static void main(String[] args) {
 	fi.method(3);
 	
 	//매개 변수가 하나일 경우에는 괄호()를 생략 할 수 있다.
-	fi = (x) -> System.out.println(x*5);
+	fi = x -> System.out.println(x*5);
 	fi.method(4);
 }
 }
