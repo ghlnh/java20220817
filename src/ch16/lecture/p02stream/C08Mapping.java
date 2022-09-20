@@ -18,7 +18,7 @@ public class C08Mapping {
 				.sorted((a, b) -> b - a)
 				//Stream<Integer> ->String
 				.map((e) -> e + "")
-				.reduce((s1, s2) -> s1 + ", " + s2)
+				.reduce((s1, s2) -> s1 + ", " + s2)	//?? 강의 다시보기로 왜해야되는지 확인
 				.get();
 		
 		System.out.println(res); // "9, 5, 3, 1, 0"
