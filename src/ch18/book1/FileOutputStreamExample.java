@@ -1,4 +1,4 @@
-package ch18;
+package ch18.book1;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -7,8 +7,8 @@ import java.io.IOException;
 public class FileOutputStreamExample {
 	public static void main(String[] args) throws Exception {
 		String originalFileName = 
-				"파일 디렉토리";
-		String targetFileName = "C:/Temp/house.jpg";
+				"C:\\Users\\user\\Desktop\\output\\house.jpg";
+		String targetFileName = "C:\\Users\\user\\Desktop\\output\\house2.jpg";
 		
 		FileInputStream fis = new FileInputStream(originalFileName);
 		FileOutputStream fos = new FileOutputStream(targetFileName);

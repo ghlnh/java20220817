@@ -16,6 +16,7 @@ public class C22GroupingBy {
 		Map<String, IntSummaryStatistics> map2 = Stream.of(3, 4, 5, 6, 7, 8, 9, 10)
 			.collect(Collectors.groupingBy((e) -> (e % 2) == 0 ? "짝수" : "홀수"
 				, Collectors.summarizingInt(Integer::intValue)));
+
 		
 		System.out.println("짝수들의 합 " + map2.get("짝수").getSum());
 		System.out.println("홀수들의 합 " + map2.get("홀수").getSum());
